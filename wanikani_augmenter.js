@@ -103,11 +103,11 @@
         var wrongCount = $.jStorage.get("wrongCount");
 
         var itemIndex;
-        if (currentItem.rad) {
+        if (currentItem.type === "Radical") {
             itemIndex = "r" + currentItem.id;
-        } else if (currentItem.kan) {
+        } else if (currentItem.type === "Kanji") {
             itemIndex = "k" + currentItem.id;
-        } else if (currentItem.voc) {
+        } else if (currentItem.type === "Vocabulary") {
             itemIndex = "v" + currentItem.id;
         }
 
